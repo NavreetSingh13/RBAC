@@ -1,10 +1,10 @@
 .container {
   min-height: 100vh;
-  background-color: #f5f5f5;
+  background-color: #000000;
 }
 
 .navbar {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #de0707 0%, #0db1d1 100%);
   color: white;
   padding: 1rem 2rem;
   display: flex;
@@ -71,7 +71,7 @@
 }
 
 .header-section h2 {
-  color: #333;
+  color: #ffffff;
 }
 
 .create-btn {

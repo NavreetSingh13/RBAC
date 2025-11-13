@@ -4,7 +4,7 @@ const User = require('./models/User');
 const Post = require('./models/Post');
 require('dotenv').config();
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/rbac-app';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://rbac:a1b2c3@cluster1.zoiwy68.mongodb.net/?appName=Cluster1';
 
 async function seedDatabase() {
   try {

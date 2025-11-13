@@ -105,7 +105,7 @@ const PostList = () => {
   return (
     <div className="container">
       <nav className="navbar">
-        <h1>RBAC MERN App</h1>
+        <h1>NM Writes-Your Personlized Blogging Spot</h1>
         <div className="nav-right">
           {isAdmin && (
             <Link to="/admin" className="admin-link">

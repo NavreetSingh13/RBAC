@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/rbac-app', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://rbac:a1b2c3@cluster1.zoiwy68.mongodb.net/?appName=Cluster1', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })

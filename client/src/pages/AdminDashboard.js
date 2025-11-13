@@ -9,7 +9,7 @@ const AdminDashboard = () => {
   return (
     <div className="admin-container">
       <nav className="navbar">
-        <h1>RBAC MERN App - Admin Dashboard</h1>
+        <h1>Admin Dashboard</h1>
         <div className="nav-right">
           <span className="user-info">
             {user?.username} ({user?.role})
