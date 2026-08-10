@@ -4,7 +4,6 @@ services:
     image: ghcr.io/navreetsingh13/rbac-frontend:latest
     container_name: rbac_frontend
     restart: unless-stopped
-
     networks:
       - rbac_network
 
@@ -12,13 +11,10 @@ services:
     image: ghcr.io/navreetsingh13/rbac-backend:latest
     container_name: rbac_backend
     restart: unless-stopped
-
     env_file:
       - .env
-
     depends_on:
       - mongodb
-
     networks:
       - rbac_network
 
@@ -26,10 +22,8 @@ services:
     image: mongo:7
     container_name: rbac_mongodb
     restart: unless-stopped
-
     volumes:
       - mongodb_data:/data/db
-
     networks:
       - rbac_network
 
