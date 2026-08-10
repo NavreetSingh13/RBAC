@@ -1,33 +1,20 @@
 services:
 
   frontend:
-
     image: ghcr.io/navreetsingh13/rbac-frontend:latest
-
     container_name: rbac_frontend
-
     restart: unless-stopped
-
-    ports:
-      - "3000:80"
-
-    depends_on:
-      - backend
 
     networks:
       - rbac_network
 
   backend:
-
     image: ghcr.io/navreetsingh13/rbac-backend:latest
-
     container_name: rbac_backend
-
     restart: unless-stopped
 
     env_file:
       - .env
-
 
     depends_on:
       - mongodb
@@ -36,11 +23,8 @@ services:
       - rbac_network
 
   mongodb:
-
     image: mongo:7
-
     container_name: rbac_mongodb
-
     restart: unless-stopped
 
     volumes:
@@ -50,9 +34,8 @@ services:
       - rbac_network
 
 volumes:
-
   mongodb_data:
 
 networks:
-
   rbac_network:
+    driver: bridge
